@@ -1,2 +1,0 @@
-Vuelos   = s3://athena-examples-us-east-1/flight/parquet/
-Medicare = s3://awsglue-datasets/examples/medicare/
