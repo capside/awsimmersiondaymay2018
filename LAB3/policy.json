@@ -1,0 +1,29 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::awsglue-datasets/examples/us-legislators*",
+                "arn:aws:s3:::awsglue-datasets/examples/medicare*",
+                "arn:aws:s3:::athena-examples-us-east-1/flight/parquet*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::crawler-test-mario/*",
+                "arn:aws:s3:::crawler-test-mario",
+                "arn:aws:s3:::immersiondaymay2018",
+                "arn:aws:s3:::immersiondaymay2018/*"
+            ]
+        }
+    ]
+}
